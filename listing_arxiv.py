@@ -3,9 +3,6 @@ import requests
 import httplib2
 import os
 import base64
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from apiclient import errors, discovery
 from user_settings import URL, list_key, api
 import datetime
 
