@@ -1,6 +1,6 @@
 # About this fork
 
-Changed the "send to your email" option for "posting to twitter". Still testing, will update as the project progresses, you can see the results in [this account](https://twitter.com/rilufix)
+Changed the "send to your email" option for "posting to twitter". Still testing, will update as the project progresses, you can see the results in [this account](https://twitter.com/rilufix).
 
 # Personalized list of today's articles from ArXiv
 
