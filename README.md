@@ -1,3 +1,7 @@
+# About this fork
+
+Changed the "send to your email" option for "posting to twitter". Still testing, will update as the project progresses, you can see the results in [this account](https://twitter.com/rilufix)
+
 # Personalized list of today's articles from ArXiv
 
 Print and/or send to your gmail a personalized list of today's articles published in ArXiv based on your pre-defined multiple sets of keywords. The script returns: title, abstract and the ArXiv link for each article. Entries are grouped  by your pre-defined key. 
