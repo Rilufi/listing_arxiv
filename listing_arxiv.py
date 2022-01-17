@@ -5,6 +5,7 @@ import os
 import base64
 from user_settings import URL, list_key, api
 import datetime
+from time import sleep
 
 today = datetime.date.today() # ex 2015-10-31
 data = today.strftime("%d/%m")
@@ -14,6 +15,7 @@ soup = BeautifulSoup(url_get.content, 'html.parser')
 
 h3 = soup.find('h3')
 for sibling in h3.find_next_siblings():
+    sleep(0.01)
     if sibling.name == "h3":
         break
     else:
