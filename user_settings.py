@@ -14,8 +14,8 @@ api = tweepy.API(auth, wait_on_rate_limit = True, wait_on_rate_limit_notify = Tr
 
 URL = "https://arxiv.org/list/astro-ph/new"
 
-list_key = {"DTGs": ["dynamically tagged groups", "dtg", "dtgs"]
-                "STREAMS": ["stream", "streams"]
-                "OVERDENSITIES": ["overdensity", "overdensities", "triand", "monocerus"]
-                "ARCHAEOLOGY": ["galactic archaeology", "archaeology"]
+list_key = {"DTGs": ["dynamically tagged groups", "dtg", "dtgs"],
+                "STREAMS": ["stream", "streams"],
+                "OVERDENSITIES": ["overdensity", "overdensities", "triand", "monocerus"],
+                "ARCHAEOLOGY": ["galactic archaeology", "archaeology"],
                 "METAL-POOR": ["metal-poor", "metal poor"]}
