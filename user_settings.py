@@ -14,9 +14,8 @@ api = tweepy.API(auth, wait_on_rate_limit = True, wait_on_rate_limit_notify = Tr
 
 URL = "https://arxiv.org/list/astro-ph/new"
 
-list_key = {"PHOTO-Zs":["photometric redshift", "photo-z", "photometric redshifts", "photo-zs"],
-                "QUASARS":["quasar", "qso", "quasars", "qsos"],
-                "HIGH-REDSHIFT UNIVERSE": ["high redshift", "high-redshift", "high-z"],
-                "ML": ["machine learning", "deep learning"],
-                "CLUSTERS": ["cluster"],
-                "AGBs": ["agbs", "agb", "assymptotic giant branch"]}
+list_key = {"DTGs": ["dynamically tagged groups", "dtg", "dtgs"]
+                "STREAMS": ["stream", "streams"]
+                "OVERDENSITIES": ["overdensity", "overdensities", "triand", "monocerus"]
+                "ARCHAEOLOGY": ["galactic archaeology", "archaeology"]
+                "METAL-POOR": ["metal-poor", "metal poor"]}
