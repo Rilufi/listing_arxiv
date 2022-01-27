@@ -83,3 +83,6 @@ while coun < len(chunkex):
     for tweet in tweets:
         api.update_status(str(chunkex[coun]), in_reply_to_status_id = tweet.id, auto_populate_reply_metadata = True)
         coun += 1
+
+recipient_id = "1008771819745226754"
+api.send_direct_message(recipient_id, mystring+ "\n" +myexstring)
