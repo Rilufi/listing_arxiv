@@ -20,5 +20,5 @@ list_key = {"ARCHAEOLOGY": ["galactic archaeology", "archaeology"],
                 "SAUSAGE": ["gaia-sausage", "gaia-enceladus", "gaia-sausage-enceladus", "gaia-sausage/enceladus"],
                 "METAL-POOR": ["metal-poor", "metal poor"],
                 "MERGERS": ["accretion events", "massive mergers"],
-                "ABUNDANCES": ["chemical enrichment", "abundances", "elements"],
+                "ABUNDANCES": ["chemical enrichment", "chemical abundances"],
                 "DISC": ["stellar disc"]}
