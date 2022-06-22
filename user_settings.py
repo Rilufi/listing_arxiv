@@ -17,9 +17,9 @@ URL = "https://arxiv.org/list/astro-ph/new"
 list_key = {"ARCHAEOLOGY": ["galactic archaeology", "archaeology"],
                 "STREAMS": ["stream", "streams"],
                 "OVERDENSITIES": ["overdensity", "overdensities", "triand", "monoceros", "monocerus"],
-                "SUBSTRUCTURES": ["sequoia", "helmi streams", "thamnos", "wukong", "arjuna", "aleph", "disrupted dwarf galaxy", "gaia-sausage", "gaia-enceladus", "gaia-sausage-enceladus", "gaia-sausage/enceladus"],
+                "SUBSTRUCTURES": ["sequoia", "helmi streams", "thamnos", "wukong", "arjuna", "aleph", "disrupted dwarf galaxy", "GSE", "gaia-sausage", "gaia-enceladus", "gaia-sausage-enceladus", "gaia-sausage/enceladus"],
                 "METAL-POOR": ["metal-poor", "metal poor"],
                 "MERGERS": ["accretion events", "massive mergers"],
                 "ABUNDANCES": ["chemical enrichment", "chemical abundances"],
-                "DISC": ["stellar disc"],
-                "FRIENDS": ["limberg", "rossi", "villegas", "santucci", "perottoni", "abuchaim", "borbolato"]}
+                "DISC": ["stellar disc"]}
+#                "FRIENDS": ["limberg", "rossi", "villegas", "santucci", "perottoni", "abuchaim", "borbolato"]}
