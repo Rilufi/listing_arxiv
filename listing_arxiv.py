@@ -48,15 +48,18 @@ for key in list_key:
         email_body = email_body + "No articles published today. \n\n"
 
 
-toReply = "rilufix" 
+toReply = "botoronga" 
 
-mystring = f""" Your ArXiv list today {data}"""
+mystring = f""" {data} Astrophysics of Galaxies new arXiv submissions
+
+https://arxiv.org/list/astro-ph.GA/new"""
 
 
 try:
     api.update_status(mystring)
 except:
-    api.update_status("Não rolou.")
+    print("não rolou")
+    pass
 
 myexstring = f"""{email_body}"""
 
@@ -84,5 +87,9 @@ while coun < len(chunkex):
         api.update_status(str(chunkex[coun]), in_reply_to_status_id = tweet.id, auto_populate_reply_metadata = True)
         coun += 1
 
-api.send_direct_message("1008771819745226754", mystring+ "\n" +myexstring)
-api.send_direct_message("1532143352837292033", mystring+ "\n" +myexstring)
+try:
+    api.send_direct_message("1008771819745226754", mystring+ "\n" +myexstring)
+    api.send_direct_message("1532143352837292033", mystring+ "\n" +myexstring)
+except:
+    print("treta nas dm")
+    pass
