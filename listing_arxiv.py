@@ -50,8 +50,8 @@ for key in list_key:
 
 toReply = "botoronga" 
 
-mystring = f""" {data} Astrophysics of Galaxies 
-new arXiv submissions
+mystring = f""" Astrophysics of Galaxies 
+new arXiv submissions {data}
 
 https://arxiv.org/list/astro-ph.GA/new"""
 
