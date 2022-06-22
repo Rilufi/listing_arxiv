@@ -17,8 +17,8 @@ URL = "https://arxiv.org/list/astro-ph/new"
 list_key = {"ARCHAEOLOGY": ["galactic archaeology", "archaeology"],
                 "STREAMS": ["stream", "streams"],
                 "OVERDENSITIES": ["overdensity", "overdensities", "triand", "monoceros", "monocerus"],
-                "SAUSAGE": ["gaia-sausage", "gaia-enceladus", "gaia-sausage-enceladus"],
+                "SAUSAGE": ["gaia-sausage", "gaia-enceladus", "gaia-sausage-enceladus", "gaia-sausage/enceladus"],
                 "METAL-POOR": ["metal-poor", "metal poor"],
-                "MERGERS": ["merger", "accretion"],
+                "MERGERS": ["accretion events", "massive mergers"],
                 "ABUNDANCES": ["chemical enrichment", "abundances", "elements"],
-                "DISC": ["warp", "flare", "stellar disc"]}
+                "DISC": ["stellar disc"]}
