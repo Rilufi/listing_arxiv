@@ -15,7 +15,9 @@ api = tweepy.API(auth, wait_on_rate_limit = True, wait_on_rate_limit_notify = Tr
 URL = "https://arxiv.org/list/astro-ph/new"
 
 list_key = {"ARCHAEOLOGY": ["galactic archaeology", "archaeology"],
-                "OVERDENSITIES/STREAMS": ["stream", "streams", "overdensity", "overdensities", "triand", "monoceros", "monocerus"],
+                "OVERDENSITIES": ["overdensity", "overdensities", "triand", "monoceros", "monocerus"],
+                "STREAMS": ["stream", "streams"],
+                "DISC": ["stellar disc", "thin disc", thick disc"],
                 "SUBSTRUCTURES": ["sequoia", "helmi streams", "thamnos", "wukong", "arjuna", "aleph", "disrupted dwarf galaxy", "GSE", "gaia-sausage", "gaia-enceladus", "gaia-sausage-enceladus", "gaia-sausage/enceladus"],
                 "MERGERS": ["major merger", "accretion events", "massive mergers"],
                 "ABUNDANCES": ["chemical enrichment", "chemical abundances", "element abundances"],
