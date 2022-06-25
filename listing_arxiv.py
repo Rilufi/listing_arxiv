@@ -48,7 +48,7 @@ for key in list_key:
         email_body = email_body + "No articles published today. \n\n"
 
 
-toReply = "botoronga" 
+toReply = "nasobot" 
 
 mystring = f""" Astrophysics of Galaxies 
 new arXiv submissions {data}
