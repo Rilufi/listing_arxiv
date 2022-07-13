@@ -29,14 +29,14 @@ send = False
 email_body = ""
 for key in list_key:
     print("\n\n", key)
-    email_body = email_body + key + "\n----------------------------" + "\n"
+    email_body = email_body + key + "\n---------------------------" + "\n"
     aux = 0
     for index, title in enumerate(title_element):
         if set(list_key[key]) & set(title.text.strip().lower().split(' ')) or set(list_key[key]) & set(abstract_element[index]):            
             print(title.text.strip(), '\n')
             print(abstract_element[index].text.strip(), '\n')
             print("www.arxiv.org/abs/"+link_element[index].text.strip().split(':')[-1], '\n')
-            print("----------------------------")
+            print("---------------------------")
 
             email_body = email_body + str(title.text.strip())+'\n' + "Abstract:"+ str(abstract_element[index].text.strip())+'\n'+\
                             "www.arxiv.org/abs/"+str(link_element[index].text.strip().split(':')[-1])+'\n\n'
