@@ -6,6 +6,7 @@ import base64
 from user_settings import URL, list_key, api
 import datetime
 from time import sleep
+import telebot
 
 today = datetime.date.today() # ex 2015-10-31
 data = today.strftime("%d/%m")
@@ -47,7 +48,8 @@ for key in list_key:
         print("No articles found today. \n")
         email_body = email_body + "No articles published today. \n\n"
 
-
+TOKEN = os.environ["TELEGRAM_TOKEN"]
+bot = telebot.TeleBot(TOKEN)
 toReply = "nasobot" 
 
 mystring = f""" Astrophysics of Galaxies 
@@ -89,6 +91,7 @@ while coun < len(chunkex):
         coun += 1
 
 try:
+    bot.send_message(446130526,  mystring+ "\n" +myexstring)
     api.send_direct_message("1008771819745226754", mystring+ "\n" +myexstring)
     api.send_direct_message("1532143352837292033", mystring+ "\n" +myexstring)
 except:
