@@ -60,7 +60,7 @@ https://arxiv.org/list/astro-ph.GA/new"""
 try:
     api.update_status(mystring)
 except:
-    print("não rolou")
+    print("não rolou o status")
     pass
 
 myexstring = f"""{email_body}"""
@@ -88,7 +88,7 @@ while coun < len(chunkex):
             api.update_status(str(chunkex[coun]), in_reply_to_status_id = tweet.id, auto_populate_reply_metadata = True)
             coun += 1
         except:
-            print("não rolou o status)
+            print("não rolou o resto")
             pass
 
 try:
