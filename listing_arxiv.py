@@ -81,16 +81,16 @@ chunkex = [(n) for n in chunks]
 
 coun = 0
 
-while coun < len(chunkex):
-    tweets = api.user_timeline(screen_name = toReply, count=1)
-    for tweet in tweets:
-        try:
+try:
+    while coun < len(chunkex):
+        tweets = api.user_timeline(screen_name = toReply, count=1)
+        for tweet in tweets:
             api.update_status(str(chunkex[coun]), in_reply_to_status_id = tweet.id, auto_populate_reply_metadata = True)
             coun += 1
-        except:
-            print("não rolou o resto")
-            pass
-
+except:
+    print("não rolou o resto)
+    pass
+            
 try:
     bot.send_message(446130526,  mystring+ "\n" +myexstring)
     api.send_direct_message("1008771819745226754", mystring+ "\n" +myexstring)
