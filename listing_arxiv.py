@@ -88,8 +88,8 @@ while coun < len(chunkex):
             api.update_status(str(chunkex[coun]), in_reply_to_status_id = tweet.id, auto_populate_reply_metadata = True)
             coun += 1
         except:
-        print("não rolou o status)
-        pass
+            print("não rolou o status)
+            pass
 
 try:
     bot.send_message(446130526,  mystring+ "\n" +myexstring)
