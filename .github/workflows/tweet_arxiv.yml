@@ -1,11 +1,11 @@
 name: arxivando
 
 
-on:
+on: push
 
-    schedule:
+#    schedule:
 
-        - cron: '0 10 * * *'
+#        - cron: '0 10 * * *'
 
 jobs:
 
@@ -33,6 +33,8 @@ jobs:
                   envkey_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
                   envkey_ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+
+                  envkey_TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
 
                   file_name: .env
 
