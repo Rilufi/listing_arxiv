@@ -88,7 +88,7 @@ try:
             api.update_status(str(chunkex[coun]), in_reply_to_status_id = tweet.id, auto_populate_reply_metadata = True)
             coun += 1
 except:
-    print("não rolou o resto)
+    print("não rolou o resto")
     pass
             
 try:
