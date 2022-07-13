@@ -57,7 +57,6 @@ new arXiv submissions {data}
 
 https://arxiv.org/list/astro-ph.GA/new"""
 
-
 try:
     api.update_status(mystring)
 except:
@@ -65,7 +64,6 @@ except:
     pass
 
 myexstring = f"""{email_body}"""
-
 
 def get_chunks(s, maxlength):
     start = 0
@@ -83,12 +81,15 @@ chunkex = [(n) for n in chunks]
 
 coun = 0
 
-
 while coun < len(chunkex):
     tweets = api.user_timeline(screen_name = toReply, count=1)
     for tweet in tweets:
-        api.update_status(str(chunkex[coun]), in_reply_to_status_id = tweet.id, auto_populate_reply_metadata = True)
-        coun += 1
+        try:
+            api.update_status(str(chunkex[coun]), in_reply_to_status_id = tweet.id, auto_populate_reply_metadata = True)
+            coun += 1
+        except:
+        print("não rolou o status)
+        pass
 
 try:
     bot.send_message(446130526,  mystring+ "\n" +myexstring)
