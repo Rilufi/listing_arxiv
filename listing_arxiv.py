@@ -52,10 +52,10 @@ TOKEN = os.environ["TELEGRAM_TOKEN"]
 bot = telebot.TeleBot(TOKEN)
 toReply = "nasobot" 
 
-mystring = f""" Astrophysics of Galaxies 
+mystring = f""" Astrophysics 
 new arXiv submissions {data}
 
-https://arxiv.org/list/astro-ph.GA/new"""
+https://arxiv.org/list/astro-ph/new"""
 
 try:
     api.update_status(mystring)
