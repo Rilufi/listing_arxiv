@@ -92,7 +92,6 @@ except:
     pass
             
 try:
-    bot.send_message(446130526,  mystring+ "\n" +myexstring)
     api.send_direct_message("1008771819745226754", mystring+ "\n" +myexstring)
     api.send_direct_message("1532143352837292033", mystring+ "\n" +myexstring)
 except:
